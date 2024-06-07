@@ -1,0 +1,28 @@
+### GET ALL NOTES
+GET http://localhost:3000/notes
+
+### ADD A NOTE
+
+POST http://localhost:3000/notes
+Content-Type: application/json
+
+{
+  "title": "Reading Among us",
+  "content": "The first ten chapters"
+}
+
+### GET A NOTE
+GET http://localhost:3000/notes/e5a07464-14f0-4440-9dfc-0a0034da6c79
+
+### UPDATE A NOTE
+
+PUT http://localhost:3000/notes/00d54c07-ff98-4bbc-b4ab-04edf9b99a5c
+Content-Type: application/json
+
+{
+  "title": "To be deleted",
+  "body": "Tekken 7 fight scene"
+}
+
+### DELETE A NOTE
+DELETE http://localhost:3000/notes/00d54c07-ff98-4bbc-b4ab-04edf9b99a5c
